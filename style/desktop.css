@@ -177,13 +177,13 @@ a {
     margin-top: 2.5rem;
 }
 
-.testimonials .testimonial .testimonial-attribution p {
+.testimonials .testimonial .testimonial-attribution .author {
     font-weight: var(--black);
     color: var(--very-dark-desaturated-blue);
     font-family: var(--fraunces);
 }
 
-.testimonials .testimonial .testimonial-attribution small {
+.testimonials .testimonial .testimonial-attribution .role {
     font-size: var(--semi-bold);
     color: var(--greyish-blue);
     font-size: 0.875rem;
