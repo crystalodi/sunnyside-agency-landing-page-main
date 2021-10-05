@@ -87,6 +87,8 @@ a {
     font-family: var(--fraunces);
     font-weight: var(--black);
     text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: .5rem;
 }
 
 .mobile {
@@ -116,9 +118,18 @@ a {
     justify-content: center;
 }
 
+.site-grid .site-grid-text .site-grid-title {
+    font-weight: var(--black);
+    font-family: var(--fraunces);
+    font-size: 2.5rem;
+    color: var(--very-dark-desaturated-blue);
+    line-height: 1.25;
+}
+
 .site-grid .site-grid-text .site-grid-wrapper {
     max-width: 80%; /* initial on mobile */
 }
+
 
 .main-wrapper {
     max-width: 1200px;
