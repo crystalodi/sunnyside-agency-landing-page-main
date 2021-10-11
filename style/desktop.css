@@ -7,7 +7,8 @@
     --yellow: hsl(51, 100%, 49%);
     --graphic-design-text: hsl(167, 40%, 24%);
     --photography-text: hsl(198, 62%, 26%);
-    --footer: hsl(168, 34%, 41%);
+    --footer: 	hsl(168, 44%, 70%);
+    --footer-text: hsl(168, 34%, 41%);
     /*Neutral*/
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --very-dark-greyish-blue: hsl(213, 9%, 39%);
@@ -40,6 +41,7 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 #header {
@@ -278,9 +280,35 @@ a {
 
 #footer {
     background-color: var(--footer);
+    color: var(--footer-text);
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer .footer-logo {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer-social-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 33px;
 }
 
 .attribution {
-    font-family: 'Fraunces', serif;
+    font-family: var(--barlow);
 }
 
