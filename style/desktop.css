@@ -49,6 +49,7 @@ a {
     background: url("../images/desktop/image-header.jpg") no-repeat center center/cover;
     flex-direction: column;
     min-height: 100vh;
+    color: var(--white);
 }
 
 #header .navbar {
@@ -65,11 +66,20 @@ a {
 }
 
 #header .navbar .desktop-nav a {
-    padding-left: 1rem;
-    font-size: .80rem;
-    font-weight:500;
-    text-decoration: none;
-    color: var(--white)
+    font-weight: var(--semi-bold);
+    padding: 0 1rem 0 1rem;
+}
+
+#header .navbar .desktop-nav a:last-child {
+    border: none;
+    background: var(--white);
+    border-radius: 1.875rem;
+    color: var(--very-dark-desaturated-blue);
+    font-family: var(--fraunces);
+    text-transform: uppercase;
+    font-size: 83.33%;
+    padding: 15px 30px;
+    font-weight: var(--black);
 }
 
 #header .site-header {
