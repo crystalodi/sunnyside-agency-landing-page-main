@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+:root {
+  /* Primary */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --graphic-design-text: hsl(167, 40%, 24%);
+  --photography-text: hsl(198, 62%, 26%);
+  --footer: 	hsl(168, 44%, 70%);
+  --footer-text: hsl(168, 34%, 41%);
+  /*Neutral*/
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-greyish-blue: hsl(213, 9%, 39%);
+  --dark-greyish-blue: hsl(232, 10%, 55%);
+  --greyish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+  /* font families */
+  --fraunces: "Fraunces", serif;
+  --barlow: "Barlow", sans-serif;
+  /*font-weights */
+  --semi-bold: 600;
+  --black: 900;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--barlow);
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main__about {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main__about .main__about-item {
+  flex-basis: 50%;
+}
+
+.main__about .main__about-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main__about .main__about-img--desktop {
+  display: block;
+}
+
+.main__about .main__about-img--mobile {
+  display: none;
+}
+
+.main__gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__gallery .main__gallery-image--desktop {
+  display: block;
+  width: 25%;
+  height: auto;
+}
+
+.main__gallery .main__gallery-image--mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main__about {
+    flex-flow: column nowrap;
+  }
+  
+  .main__about .main__about-img--desktop {
+    display: none;
+  }
+  
+  .main__about .main__about-img--mobile {
+    display: block;
+  }
+
+  .main__gallery .main__gallery-image--desktop {
+    display: none;
+  }
+
+  .main__gallery .main__gallery-image--mobile {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
+  .header {
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+}

@@ -6,8 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css
   ">
-  <link rel="stylesheet" href="style/desktop.css">
-  <!-- <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width: 768px)"> -->
+  <link rel="stylesheet" href="style/style.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -62,28 +61,22 @@
   Projects
   Contact -->
   <header class="header">
-    <section class="header__hero"></section>
   </header>
   <main class="main">
-    <section class="main__transform main__section">
-      <div class="main__transform__text main__section__text"></div>
-      <div class="main__transform__img">
-        <img src="./images/desktop/image-transform.jpg" class="main__section__img">
+    <section class="main__about">
+      <div class="main__about-item main__about-transform">1</div>
+      <div class="main__about-item main__about-transform-img">
+       <img src="./images/desktop/image-transform.jpg" class="main__about-img main__about-img--desktop">
+       <img src="./images/mobile/image-transform.jpg" class="main__about-img main__about-img--mobile">
       </div>
-    </section>
-    <section class="main__standout main__section">
-      <div class="main__standout__img">
-        <img src="./images/desktop/image-stand-out.jpg" class="main__section__img">
+      <div class="main__about-item main__about-standout-img">
+        <img src="./images/desktop/image-stand-out.jpg" class="main__about-img main__about-img--desktop">
+        <img src="./images/mobile/image-stand-out.jpg" class="main__about-img main__about-img--mobile">
       </div>
-      <div class="main__standout__text main__section__text"></div>
-    </section>
-    <section class="main__services main__section">
-      <div class="main__services__design">
-        <img src="./images/desktop/image-graphic-design.jpg" class="main__section__img">
+      <div class="main__about-item main__about-standout">4
       </div>
-      <div class="main__services__photography">
-        <img src="./images/desktop/image-photography.jpg" class="main__section__img">
-      </div>
+      <div class="main__about-item main__about-design">5</div>
+      <div class="main__about-item main__about-photography">6</div>
     </section>
     <section class="main__testimonials">
       <div class="main__testimonials__item"></div>
@@ -91,10 +84,14 @@
       <div class="main__testimonials__item"></div>
     </section>
     <section class="main__gallery">
-      <img src="./images/desktop/image-gallery-milkbottles.jpg" class="main__gallery__img">
-      <img src="./images/desktop/image-gallery-orange.jpg" class="main__gallery__img">
-      <img src="./images/desktop/image-gallery-cone.jpg" class="main__gallery__img">
-      <img src="./images/desktop/image-gallery-sugarcubes.jpg" class="main__gallery__img">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" class="main__gallery-image--desktop">
+      <img src="./images/desktop/image-gallery-orange.jpg" class="main__gallery-image--desktop">
+      <img src="./images/desktop/image-gallery-cone.jpg" class="main__gallery-image--desktop">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" class="main__gallery-image--desktop">
+      <img src="./images/mobile/image-gallery-milkbottles.jpg" class="main__gallery-image--mobile">
+      <img src="./images/mobile/image-gallery-orange.jpg" class="main__gallery-image--mobile">
+      <img src="./images/mobile/image-gallery-cone.jpg" class="main__gallery-image--mobile">
+      <img src="./images/mobile/image-gallery-sugar-cubes.jpg" class="main__gallery-image--mobile">
     </section>
   </main>
   <footer class="footer">
