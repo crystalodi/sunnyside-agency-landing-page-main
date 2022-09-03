@@ -62,7 +62,8 @@ body {
 }
 
 .main__about .main__about-item-container {
-  width: 65%;
+  width: 75%;
+  padding: 32px;
 }
 
 .main__about .main__about-item-title {
