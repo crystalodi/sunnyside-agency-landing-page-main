@@ -5,6 +5,7 @@
   /* Primary */
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
+  --yellow-hover: #FAD400;
   --graphic-design-text: hsl(167, 40%, 24%);
   --photography-text: hsl(198, 62%, 26%);
   --footer: 	hsl(168, 44%, 70%);
@@ -34,7 +35,6 @@ a {
 
 body {
   font-family: var(--barlow);
-  line-height: 1.75;
   font-size: 18px;
 }
 
@@ -55,6 +55,67 @@ body {
 
 .main__about .main__about-item {
   flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.main__about .main__about-item-container {
+  width: 65%;
+}
+
+.main__about .main__about-item-title {
+  font-family: var(--fraunces);
+  font-weight: var(--black);
+  font-size: 40px;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 33px;
+}
+
+.main__about .main__about-item-text {
+  font-family: var(--barlow);
+  font-weight: var(--semi-bold);
+  line-height: 30px;
+  color: var(--dark-greyish-blue);
+  margin-bottom: 40px;
+}
+
+.main__about .main__about-item-link {
+  text-transform: uppercase;
+  font-weight: var(--black);
+  font-family: var(--fraunces);
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: var(--very-dark-desaturated-blue);
+  padding-left: 8px;
+  padding-right: 9px;
+  position: relative;
+  z-index: 1;
+}
+
+.main__about .main__about-item-link::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  height: 10px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.25;
+  border-radius: 28px;
+}
+
+.main__about .main__about-transform-link::before {
+  background-color: var(--yellow);
+}
+
+.main__about .main__about-standout-link::before {
+  background-color: var(--soft-red);
+}
+
+.main__about .main__about-item-link:hover::before {
+  opacity: 1;
 }
 
 .main__about .main__about-img {
@@ -89,6 +150,24 @@ body {
 @media (max-width: 768px) {
   .main__about {
     flex-flow: column nowrap;
+  }
+
+  .main__about .main__about-item {
+    text-align: center;
+  }
+
+  .main__about .main__about-item-container {
+    padding: 64px 24px;
+    width: auto;
+  }
+
+  .main__about .main__about-item-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .main__about .main__about-item-text {
+    margin-bottom: 32px;
   }
   
   .main__about .main__about-img--desktop {
