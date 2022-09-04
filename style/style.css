@@ -62,8 +62,8 @@ body {
 }
 
 .main__about .main__about-item-container {
-  width: 75%;
-  padding: 32px;
+  max-width: 500px;
+  padding: 32px 16px;
 }
 
 .main__about .main__about-item-title {
@@ -133,6 +133,17 @@ body {
   display: none;
 }
 
+.main__about .main__about-item-overlay {
+  position: relative;
+  width: 100%;
+}
+
+.main__about .main__about-item-overlay-text {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+}
+
 .main__gallery {
   display: flex;
   flex-wrap: wrap;
@@ -159,7 +170,7 @@ body {
 
   .main__about .main__about-item-container {
     padding: 64px 24px;
-    width: auto;
+    max-width: none;
   }
 
   .main__about .main__about-item-title {
