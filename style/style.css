@@ -147,7 +147,7 @@ body {
 
 .main__about .main__about-item-image-container-text {
   position: absolute;
-  bottom: 0px;
+  bottom: 10%;
   text-align: center;
   left: 50%;
   transform: translate(-50%, 0);
