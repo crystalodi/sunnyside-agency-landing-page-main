@@ -15,13 +15,15 @@
   --very-dark-greyish-blue: hsl(213, 9%, 39%);
   --dark-greyish-blue: hsl(232, 10%, 55%);
   --greyish-blue: hsl(210, 4%, 67%);
-  --white: hsl(0, 0%, 100%);
+  --white: #f2f2f2;
+  --off-white: #FFFCF8;
   /* font families */
   --fraunces: "Fraunces", serif;
   --barlow: "Barlow", sans-serif;
   /*font-weights */
   --semi-bold: 600;
   --black: 900;
+  --bold: 700;
 }
 
 ul {
@@ -46,6 +48,43 @@ body {
   background-repeat: no-repeat;
   flex-direction: column;
   min-height: 112vh;
+  color: var(--white);
+}
+
+.header .header-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 34px 40px 0px 40px;
+}
+
+.header .header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header-nav-menu-nav-list {
+  display: flex;
+}
+
+.header .header-nav-menu-nav-icon {
+  display: none;
+}
+
+.header .header-nav-menu-nav-link a {
+  margin: 0 24px;
+}
+
+.header .header-nav-menu-nav-link:last-child a {
+  text-transform: uppercase;
+  border-radius: 28px;
+  font-family: var(--fraunces);
+  font-size: 15px;
+  font-weight: var(--bold);
+  color: var(--very-dark-desaturated-blue);
+  background-color: var(--white);
+  padding: 16px 32px 15px 31px;
+  margin-right: 0px;
 }
 
 .main__about {
@@ -173,6 +212,7 @@ body {
   padding-bottom: 160px;
   text-align: center;
   align-items: center;
+  background-color: var(--off-white);
 }
 
 .main__testimonials .main__testimonials-title {
@@ -292,6 +332,7 @@ body {
 
   .main__about .main__about-item {
     text-align: center;
+    background-color: var(--off-white);
   }
 
   .main__about .main__about-item-container {
@@ -340,6 +381,10 @@ body {
   
   .main__about .main__about-img--mobile {
     display: block;
+  } 
+
+  .main__about .main__about-item-image-container-text {
+    width: 100%;
   }
 
   .main__gallery .main__gallery-image--desktop {
@@ -358,5 +403,17 @@ body {
 
   .header {
     background-image: url("../images/mobile/image-header.jpg");
+  }
+
+  .header .header-container {
+    padding: 32px 24px 0px 24px;
+  }
+
+  .header .header-nav-menu-nav-icon {
+    display: block;
+  }
+
+  .header .header-nav-menu-nav-list {
+    display: none;
   }
 }
